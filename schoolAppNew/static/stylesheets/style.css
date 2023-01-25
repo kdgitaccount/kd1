@@ -1,0 +1,33 @@
+{% load static %}
+div{
+  border:2px solid grey;
+  width:30%;
+  text-align: center;
+  float: left;
+  height: 250px;
+  margin: 15px;
+  background-color: #F1F1F1;
+  background-size: cover;
+}
+
+h1{
+
+  color: blue;
+
+}
+h2{
+  text-align: center;
+  color: green;
+  font-size: 35px;
+  font-style: italic;
+}
+button{
+  width: 150px;
+  background-color: Grey;
+  color: white;
+}
+button:hover{
+  background-color: white;
+  color: Grey;
+
+}

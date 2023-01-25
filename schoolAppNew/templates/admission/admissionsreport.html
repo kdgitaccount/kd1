@@ -1,0 +1,32 @@
+<html>
+<head>
+  <title>Welcome to Admission Report Page</title>
+  <body>
+    <h1>See Admission report : 2022-23</h1>
+    <br/>
+    <table border="2">
+      <tr>
+        <th>id</th>
+        <th>Student Name</th>
+        <th>Father Name</th>
+        <th>Class</th>
+        <th>Contact</th>
+        <th>Actions</th>
+      </tr>
+
+    {% for s  in allstudents %}
+    <tr>
+    <td>{{s.id}}</td>
+    <td>{{s.name}}</td>
+    <td>{{s.fathername}}</td>
+    <td>{{s.classname}}</td>
+    <td>{{s.contact}}</td>
+    <td><a href="/ad/update/{{s.id}}"> Update</a>&nbsp;&nbsp;&nbsp;
+    <a href="/ad/delete/{{s.id}}"> Delete</a></td>
+
+</tr>
+    {% endfor %}
+  </table>
+    </body>
+  </head>
+</html>

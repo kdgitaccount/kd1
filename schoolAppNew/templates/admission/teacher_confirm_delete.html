@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+    <form method = "POST">
+      Are you sure to delete this teavher?
+      <br/><br/><button style="color:red"; type="submit" value="confirm">Confirm</button><br/><br/>
+      {%csrf_token%}
+      </form>
+      <a href="/ad/teacherslist"><button style="color:green"; type="submit" value="cancel">Cancel</button></a>
+
+  </body>
+</html>

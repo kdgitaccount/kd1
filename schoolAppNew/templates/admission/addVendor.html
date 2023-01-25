@@ -1,0 +1,26 @@
+{% load static %}
+<html>
+<head>
+  <h2>Welcome to Add VendorForm Page</h2>
+  <link rel="stylesheet" href="{% static "stylesheets/style.css" %}"/>
+</head>
+  <body >
+
+<img src = "{% static "images/school-logo1.jpg" %}" width="100" alt = "image not found"/>
+    <h1 style="color:red">Please fill below vendor form</h1>
+    <form method="POST">
+      <table>
+      {{form.as_table}}
+    </table>
+      <br/>
+      <input type="submit" value="Add Vendor"><br/><br/>
+      <input type="submit" value="Total Cost">
+
+      {% csrf_token %}
+    </form>
+
+
+
+    </body>
+
+</html>
